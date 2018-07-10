@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--la etiqueta <head> es la primera de las dos partes en que se estructura un documento HTML-->
+
+<head>
+    <!-- la etiqueta <meta> es la etiqueta que se utilisa para la informacion sobre la pagina-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la etiqueta <title> indica el titulo de un documento -->
+    <title>mi primer pagina web</title>
+</head>
+
+<!--la etiqueta <body> representa el cuerpo del documneto html, body es la segunda etiqueta basica-->
+
+<body>
+
+    <!-- la etiqueta <div>, es un contenedor para otras etiquetas-->
+    <!-- la etiqueta <img src="imagen.jpg">, es para insertar una imagen en nuesto documento html-->
+    <!-- cuando ponemos <div align="center"><img src="img/indice.png" width="900" height="300"></div> la accion que representa con la convinacion de dos etiquetas, es insertar una imagen, con ancho y largo de pixeles, al igual que aliniando una imagen al centro, esta se puede aliniar tambien ala derecha o izquierda-->
+    <div align="center"><img src="img/indice.png" width="900" height="300" alt="bedu stack"></div>
+
+    <hr>
+    <!-- la etiqueta <hr> separa un texto de otro con una linea, al igual que se puede optar por propiedades 
+    <hr style="border:15px;"><hr style="border:2px;">-->
+
+    <!--las etiquetas <h1>, <h2>, <h3>….<h6>: encabezados, numerados del 1 al 6 por orden de RELEVANCIA.-->
+    <h1>primer encabezado</h1>
+    <h2>segundo encabezado</h2>
+    <h3>tercer encabezado</h3>
+    <h4>cuarto encabezado</h4>
+    <h5>quinto encabezado</h5>
+    <h6>sexto encabezado</h6>
+    <hr>
+
+    <p>lista desordenada</p>
+    <!-- la etiqueta <p> determinamos un texto de párrafo.-->
+
+    <ul>
+        <!--son las etiquetas que controlan las listas ordenadas y desordenadas. Ejemplo:-->
+        <li>nombre</li>
+        <li>apellido</li>
+        <li>direccion</li>
+        <li>telefono</li>
+        <li>Animalesx</li>
+    </ul>
+
+    <hr>
+    <p>lista ordenada de anclajes dentro de la pagina</p>
+
+    <ol>
+        <!-- lista ordenada aqui nos referimos a la funcion anclaje dentro de una pagina, lo que quiere decir que redireccionaremos ciertos puntos de la estructura de un documento html. la etiqueta <a>  añade enlaces. Dentro de ella tendremos dos atributos importantes, que son: href=”indica_la_URL_o_RUTA” y target=”self o _blank”, según quieras que el enlace se abra en la misma página o en una pestaña nueva. aqui se incluye <a href="#nombre">nombre</a>-->
+        <li><a href="#MathML">MathML</a></li>
+        <li><a href="#Aprender desarrollo web">Aprender desarrollo web</a></li>
+        <li><a href="#Desarrollo de aplicaciones web">Desarrollo de aplicaciones web</a></li>
+        <li><a href="#Accesibilidad">Accesibilidad</a></li>
+        <li><a href="#Seguridad">Seguridad</a></li>
+    </ol>
+
+    <h1>Tecnología web para desarrolladores </h1>
+
+    La naturaleza abierta de la web ofrece increíbles oportunidades para los desarrolladores que desean crear sitios web o aplicaciones online. Para sacar el máximo provecho de las capacidades de la web, necesitas saber cómo usarlas. Explora los enlaces siguientes para aprender más sobre varias tecnologías web. Tecnologías web Básicas HTML HyperText Markup Language (HTML) es el lenguaje utilizado para describir y definir el contenido de una página web en un formato bien estructurado. CSS Cascading Style Sheets (CSS) u Hojas de estilo en cascada se utilizan para describir el aspecto o presentación del contenido en una página web.
+    <br><br>
+
+    <!--utilizaremos la etiqueta <div id="nombre"> esto nos permitira dar una identificacion a una parte de el texto, refiriendonos con un enlace, <div id="nombre"></div> es la parte que se nos dirigira despues de pulsar el enlace que realizamos en la lista  <li><a href="#MathML">MathML</a></li>-->
+    <div id="MathML">
+        <h2>MathML</h2>
+    </div>
+
+    Mathematical Markup Language o Lenguaje de Marcado Matemático permite mostrar complicadas ecuaciones y sintaxis matemáticas.
+    <br><br>
+
+    <div id="Aprender desarrollo web">
+        <h2>Aprender desarrollo web</h2>
+    </div>
+
+    Esta serie de artículos tiene como objetivo proporcionar a los principiantes al desarrollo web todo lo que necesitan para empezar a programar sitios web simples.
+    <br><br>
+
+    <div id="Desarrollo de aplicaciones web">
+        <h2>Desarrollo de aplicaciones web</h2>
+    </div>
+    Desarrollo de aplicaciones web Documentación para desarrolladores de aplicaciones web; las aplicaciones web realmente solo hay que escribirlas una vez y se pueden desplegar en cualquier aplicación para dispositivos móviles, de escritorio y Firefox OS.
+    <br><br>
+
+    <div id="Accesibilidad">
+        <h2>Accesibilidad</h2>
+    </div>
+
+
+    La accesibilidad en los sitios web permite que tantas personas como sea posible utilicen la web, incluyendo aquellas cuyas habilidades visuales, auditivas o de otro tipo están limitadas de alguna manera. Este conjunto de artículos proporciona información sobre el desarrollo web accesible.
+    <br><br>
+
+    <div id="Seguridad">
+        <h2>Seguridad</h2>
+    </div>
+
+
+    No permita que su sitio web o aplicación pueda tener fugas de datos privados para los hackers. Utilice este conjunto de artículos para asegurarse de que sus proyectos son seguros.
+
+
+    <hr>
+
+
+    <h2>ingrese elemento</h2>
+
+
+    <!--Los elementos y atributos para formularios en HTML5 proveen un mayor grado de marcado semántico que en HTML4 y eliminan gran parte del tedioso trabajo de programar y diseñar que se necesitaba en HTML4-->
+    <!--https://developer.mozilla.org/es/docs/HTML/HTML5/Formularios_en_HTML5-->
+
+    <form action="pagina2.html">
+        ingresa tu nombre:
+        <input name="name" type="text">
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+
+    <!--etiquta de video con preferencias de anchura, y controles para play, pausa, audio, etc. dirijimos la direccion de 
+   el video y el formato del video con type-->
+    <video width="400" controls>
+  <source src="2_Instalar_MongoDB_en_Ubuntu(youtube.com).mp4" type="video/mp4">
+    </video>
+
+    <!-- esta etiqueta redirigue a otro documento html, href=”indica_la_URL_o_RUTA” y target=”self o _blank”, según quieras que el enlace se abra en la misma página o en una pestaña nueva.-->
+    <p>redireccionamiento de paginas alternas</p>
+
+    <a href="pagina2.html" target="_blank">pagina web 2</a>
+
+
+
+
+</body>
+<!--cierre de body-->
+</html><!-- cierre de html-->
